@@ -74,7 +74,7 @@ const en = {
     tfsToken: "Personal Access Token",
     credsHeader: "Credentials",
     save: "OK",
-    tfsHeader: "Account settings",
+    tfsHeader: "Account settings new new",
     credsState1: "Not validated yet",
     credsState2: "Validating...",
     credsState3: "Server unavailable or TFS/Azure DevOps path is wrong",

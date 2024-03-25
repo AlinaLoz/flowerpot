@@ -1,14 +1,13 @@
 {
-    "name": "flowerpot",
-    "displayName": "Flowerpot",
-    "version": "0.6.1",
+    "name": "flowerpot2",
+    "displayName": "Flowerpot2",
+    "version": "0.7.1",
     "description": "TFS/Azure DevOps work items tracking tool",
     "author": {
-        "name": "Valery Murashko",
-        "url": "https://github.com/Emestie"
+        "name": "Lozita"
     },
     "repository": {
-        "url": "https://github.com/Emestie/flowerpot/"
+        "url": "https://github.com/AlinaLoz/flowerpot"
     },
     "license": "MIT",
     "engines": {
@@ -62,8 +61,8 @@
         "build:main": "cd ./host/main && tsc && vite build",
         "build:preload": "cd ./host/preload && tsc && vite build",
         "build:renderer": "tsc && vite build",
-        "compile": "cross-env MODE=production npm run build && electron-builder build -mw --publish never --config .electron-builder.config.js",
-        "deploy": "cross-env MODE=production npm run build && electron-builder -mw --publish always --config .electron-builder.config.js",
+        "compile": "cross-env MODE=production npm run build && electron-builder build -l --publish never --config .electron-builder.config.js",
+        "deploy": "cross-env MODE=production npm run build && electron-builder -l --publish always --config .electron-builder.config.js",
         "postinstall": "cross-env ELECTRON_RUN_AS_NODE=1 npx --no-install electron ./scripts/update-electron-vendors.js ",
         "prettify": "prettier --write \"./**/*.{js,jsx,json,ts,tsx}\""
     },

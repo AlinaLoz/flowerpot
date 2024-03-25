@@ -21,28 +21,18 @@ const config = {
         version: packagejson.version,
         main: "host/main/dist/index.cjs",
     },
-    productName: "Flowerpot",
-    appId: "mst.flowerpot",
+    productName: "Lozita",
+    appId: "mst.lozita",
     copyright: "Copyright © 2019 ${author}",
-    win: {
-        icon: "build-resources/icons/ico/flower4.ico",
-        target: {
-            target: "default",
-            arch: "x64",
-        },
-    },
-    mac: {
-        icon: "build-resources/icons/macicon2.icns",
+    linux: {
+        icon: "build-resources/icons/png/flower0.png",
         category: "public.app-category.utilities",
-        target: {
-            target: "default",
-            arch: "arm64",
-        },
+        target: "AppImage"
     },
     publish: {
         provider: "github",
-        owner: "Emestie",
-        repo: "flowerpot",
+        owner: "AlinaLoz",
+        repo: "flowerpot"
     },
 };
 
